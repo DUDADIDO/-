@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 // 네비게이션
 import NavigationBar from "@/components/NavigationBar";
-import SideBar from "@/components/SideBar";
 
 export default function MainLayout() {
   return (
@@ -10,14 +9,17 @@ export default function MainLayout() {
         <NavigationBar />
       </header>
 
-      <div className="flex flex-1">
-        <aside className="w-[15vh] p-4">
-          <SideBar />
-        </aside>
-        <main className="flex-1 p-6 bg-gray-100 overflow-y-auto">
+      <div className="flex justify-center items-center h-full mx-20 bg-gray-200">
+        <main className="flex px-[10vw] py-[2vh]">
           <Outlet />
         </main>
       </div>
+
+      <footer>
+        <div className="flex justify-center items-center p-4">
+          &copy; 2024 AskAnything. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 }
