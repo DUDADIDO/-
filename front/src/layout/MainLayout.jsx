@@ -4,15 +4,13 @@ import NavigationBar from "@/components/NavigationBar";
 
 export default function MainLayout() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen w-full">
       <header className="">
         <NavigationBar />
       </header>
 
       <div className="flex justify-center items-center h-full mx-20 bg-gray-200">
-        <main className="flex px-[10vw] py-[2vh]">
-          <Outlet />
-        </main>
+        <Outlet />
       </div>
 
       <footer>

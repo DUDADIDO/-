@@ -1,9 +1,12 @@
+import ExpertList from "@/components/mainpage/ExpertList.jsx";
+import MainQnA from "@/components/mainpage/MainQnA.jsx";
 import { useState, useEffect } from "react";
 
 export default function MainPage() {
   return (
-    <div>
-      <h1 className=" text-5xl font-bold">메인 페이지</h1>
+    <div className="flex w-full h-full gap-[10vh] px-[10vh] justify-between items-center">
+      <MainQnA />
+      <ExpertList />
     </div>
   );
 }
