@@ -9,7 +9,7 @@ export default function MainLayout() {
         <NavigationBar />
       </header>
 
-      <div className="flex justify-center items-center h-full mx-20 bg-gray-200">
+      <div className="flex justify-center items-center h-full mx-20 bg-cover">
         <Outlet />
       </div>
 
