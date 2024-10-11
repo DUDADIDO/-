@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function Expert({ data }) {
   return (
-    <div className="flex justify-between min-h-24 w-full">
+    <div className="flex justify-between min-h-24 w-full pb-4">
       <img
         src={data.image}
         alt={data.name}
