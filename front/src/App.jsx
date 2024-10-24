@@ -7,6 +7,7 @@ import LoginLayout from "@/layout/LoginLayout.jsx";
 // 페이지
 import MainPage from "@/pages/MainPage.jsx";
 import CommunityPage from "@/pages/CommunityPage.jsx";
+import CommunityDetailPage from "@/pages/CommunityDetailPage";
 import ExpertPage from "@/pages/ExpertPage.jsx";
 import LoginPage from "@/pages/LoginPage.jsx";
 import MyPage from "@/pages/MyPage.jsx";
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <MainPage /> },
       { path: "/community", element: <CommunityPage /> },
+      { path: "/community/:id", element: <CommunityDetailPage /> },
       { path: "/expert", element: <ExpertPage /> },
       { path: "/mypage", element: <MyPage /> },
       { path: "/one-on-one", element: <OneOnOnePage /> },
