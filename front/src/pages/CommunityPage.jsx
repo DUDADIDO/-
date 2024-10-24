@@ -15,7 +15,7 @@ export default function CommunityPage() {
           </p>
         </div>
         <div className="flex justify-end items-end w-full">
-          <div className="flex items-center justify-end text-xl font-semibold bg-appBlue2 px-3 py-1 rounded-lg hover:bg-blue-400 hover:text-white duration-200 hover:cursor-pointer">
+          <div className="flex items-center justify-end text-xl bg-appBlue2 px-3 py-1 rounded-lg hover:bg-blue-400 hover:text-white duration-200 hover:cursor-pointer">
             <HiOutlinePencilAlt />
             <p>&nbsp;&nbsp;</p>
             <button>글쓰기</button>
