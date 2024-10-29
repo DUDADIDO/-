@@ -34,9 +34,9 @@ const dummy = [
 
 export default function ExpertList() {
   return (
-    <div className="w-1/2 h-5/6 rounded-2xl shadow-2xl border-gray-400 bg-appGrey2 mt-10">
+    <div className="w-1/2 h-[80vh] rounded-2xl shadow-2xl border-gray-400 bg-appGrey2">
       <p className="p-4 text-3xl font-bold">전문가 목록</p>
-      <div className="flex flex-col px-10 h-[80%] justify-around">
+      <div className="flex flex-col px-10 h-[90%] justify-around items-center">
         {dummy.map((expert) => (
           <Expert key={expert.id} data={expert} />
         ))}
