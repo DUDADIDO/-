@@ -4,7 +4,7 @@ import NavigationBar from "@/components/NavigationBar";
 
 export default function MainLayout() {
   return (
-    <div className="flex flex-col h-screen w-full">
+    <div className="flex flex-col min-h-screen h-screen w-full">
       <header className="">
         <NavigationBar />
       </header>

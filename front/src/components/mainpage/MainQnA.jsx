@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 import Question from "@/components/mainpage/question.jsx";
 
 const dummy = [
@@ -33,12 +31,16 @@ const dummy = [
 
 export default function MainQnA() {
   return (
-    <div className="w-1/2 h-5/6 rounded-2xl shadow-2xl border-gray-400 bg-appGrey2 mt-10">
-      <p className="p-4 text-3xl font-bold">많이 본 QnA</p>
-      <div className="flex flex-col px-10 h-[80%] justify-around">
-        {dummy.map((question) => (
-          <Question key={question.id} data={question} />
-        ))}
+    <div className="w-1/2 h-[80vh] rounded-2xl shadow-xl border-gray-400 bg-appGrey2 p-6">
+      <p className="text-3xl font-bold mb-4">많이 본 QnA</p>
+      <div className="flex flex-col h-[90%]">
+        <div className="flex flex-col h-full space-y-4 justify-around">
+          {dummy.map((question) => (
+            <div key={question.id} className="">
+              <Question key={question.id} data={question} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
