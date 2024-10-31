@@ -26,7 +26,7 @@ export default function Expert({ data }) {
             ))}
           </div>
         </div>
-        <p className="text-end">{data.questionCnt}건 답변</p>
+        <p className="text-end">{data.questionCnt} 건 답변</p>
       </div>
     </div>
   );
